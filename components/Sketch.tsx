@@ -22,7 +22,8 @@ export type SketchName =
   | "dots"
   | "bolt"
   | "ruler"
-  | "bang";
+  | "bang"
+  | "star";
 
 const art: Record<SketchName, { viewBox: string; paths: string[]; stretch?: boolean }> = {
   underline: {
@@ -121,6 +122,11 @@ const art: Record<SketchName, { viewBox: string; paths: string[]; stretch?: bool
       "M14 12 C15 5 35 5 36 12 C34 38 31 66 28 92 C27 99 18 99 17 92 C16 66 15 38 14 12 Z",
       "M16 118 C16 110 34 110 34 118 C34 127 16 127 16 118 Z",
     ],
+  },
+  /* a five-pointed star in one stroke, as drawn */
+  star: {
+    viewBox: "0 0 100 96",
+    paths: ["M54 3 C40 22 20 50 4 75 C26 62 60 46 100 38 C80 34 40 22 1 13 C20 28 35 44 50 62 C60 74 70 82 70 89 C70 66 62 36 55 1"],
   },
   /* a folding ruler with tick marks */
   ruler: {
