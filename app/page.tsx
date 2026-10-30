@@ -27,8 +27,11 @@ export default function ComingSoon() {
           <Spot top="46%" right="6%" w={40} rotate={12} show="desktop" depth={26} className="spot--intro spot--mark">
             <Sketch name="sparkle" />
           </Spot>
-          {/* a star, up on the right between the zigzag and the sparkle */}
-          <Spot top="28%" right="17%" w={64} rotate={14} show="desktop" depth={34} className="spot--intro spot--mark">
+          {/* a star above the headline; on phones it moves to the bottom right corner */}
+          <Spot top="24%" left="35%" w={64} rotate={14} show="desktop" depth={34} className="spot--intro spot--mark">
+            <Sketch name="star" />
+          </Spot>
+          <Spot bottom="16%" right="8%" w={64} rotate={14} show="always" depth={34} className="spot--intro spot--mark spot--phone">
             <Sketch name="star" />
           </Spot>
           {/* bottom corners, above the footer line */}
