@@ -324,7 +324,6 @@ img.flork { -webkit-user-drag: none; }
 .spot--always { display: block; }
 @media (min-width: 900px) { .spot--desktop { display: block; } }
 @media (min-width: 1100px) { .spot--wide { display: block; } }
-@media (min-width: 900px) { .spot--phone { display: none; } }
 .spot > .sketch, .spot .rig > .sketch { width: 100%; height: auto; }
 /* on phones the crew squeezes closer to the window */
 @media (max-width: 899px) {
